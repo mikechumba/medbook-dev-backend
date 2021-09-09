@@ -11,7 +11,13 @@ class PatientController extends Controller
 {
     //
     public function index() {
-        return Patient::with('gender', 'service')->all();
+        $patient = Patient::all();
+
+        return response($patient)
+            ->withHeaders([
+                'Content-Type' => 'application/json',
+                'Access-Control-Allow-Origin' => '*'
+            ]);
     }
 
     public function store(Request $request) {

@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\GenderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PatientController;
-
+use App\Http\Controllers\ServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('patients', [PatientController::class, 'index']);
 Route::post('patients', [PatientController::class, 'store']);
+
+Route::get('gender', [GenderController::class, 'index']);
+Route::get('services', [ServicesController::class, 'index']);
