@@ -10,6 +10,6 @@ class Service extends Model
     protected $table = 'tbl_service';
 
     public function patient() {
-        return $this->belongsTo('App\Patient');
+        return $this->belongsTo(Patient::class);
     }
 }

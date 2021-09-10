@@ -36,12 +36,12 @@ class Patient extends Model
     public function gender()
     {
 
-        return $this->belongsTo('App\Gender', 'gender_id', 'id');
+        return $this->belongsTo(Gender::class, 'gender_id', 'id');
 
     }
 
     public function service()
     {
-        return $this->hasOne('App\Service', 'id', 'service_id');
+        return $this->belongsTo(Service::class, 'service_id', 'id');
     }
 }

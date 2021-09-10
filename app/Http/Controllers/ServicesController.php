@@ -9,6 +9,6 @@ class ServicesController extends Controller
 {
     //
     public function index() {
-        return Service::all();
+        return response(Service::all());
     } 
 }

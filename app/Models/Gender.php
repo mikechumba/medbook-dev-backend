@@ -11,6 +11,6 @@ class Gender extends Model
 
 
     public function patient() {
-        return $this->belongsTo('App\Patient');
+        return $this->belongsTo(Patient::class);
     }
 }
