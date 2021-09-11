@@ -6,15 +6,15 @@ This is a simple api to register and retrieve patient data.
 
 To publish the app to heroku follow these steps after first installing [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) and logging in via the CLI.
 
-`heroku create {name}`
-`heroku config:set APP_KEY={YOUR_APP_SECRET_KEY}`
-`git push heroku master`
+- `heroku create {name}`
+- `heroku config:set APP_KEY={YOUR_APP_SECRET_KEY}`
+- `git push heroku master`
 
 # Endpoints
 
-`api/patients` - GET, POST
-`api/gender` - GET
-`api/service` - GET
+- `api/patients` - GET, POST
+- `api/gender` - GET
+- `api/service` - GET
 
 # License
 
